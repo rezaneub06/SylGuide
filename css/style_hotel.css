@@ -1,0 +1,494 @@
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+img {
+  vertical-align: middle;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-rounded {
+  border-radius: 6px;
+}
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .lead {
+    font-size: 24px;
+  }
+}
+
+small,
+.small {
+  font-size: 85%;
+}
+
+mark,
+.mark {
+  background-color: #fcf8e3;
+  padding: .2em;
+}
+
+
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+
+/* =======================================================
+*
+*   Template Style 
+*   Edit this section
+*
+* ======================================================= */
+
+
+#fh5co-header-section {
+  background: transparent;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header-section {
+    padding: 2.4em 0;
+  }
+}
+
+.nav-header {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+
+#featured-hotel {
+  float: left;
+  width: 100%;
+}
+
+.feature-full-1col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.feature-full-1col .image, .feature-full-1col .desc {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-1col .image, .feature-full-1col .desc {
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+}
+.feature-full-1col .image {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+.feature-full-1col .image .descrip {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  padding: 10px;
+  background: #FF5722;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.feature-full-1col .image .descrip p {
+  margin: 0;
+  color: #fff;
+}
+.feature-full-1col .image .descrip small, .feature-full-1col .image .descrip span {
+  display: block;
+}
+.feature-full-1col .image .descrip small {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-1col .image {
+    height: 300px;
+  }
+}
+.feature-full-1col .desc {
+  padding: 50px;
+  background: #fff;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-1col .desc {
+    padding: 30px;
+  }
+}
+.feature-full-1col:hover .image .descrip, .feature-full-1col:focus .image .descrip {
+  right: 0;
+}
+
+.feature-full-2col {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-2col {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.feature-full-2col .f-hotel {
+  float: left;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 992px) {
+  .feature-full-2col .f-hotel {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+.feature-full-2col .f-hotel .descrip {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  padding: 10px;
+  background: #FF5722;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.feature-full-2col .f-hotel .descrip p {
+  margin: 0;
+  color: #fff;
+}
+.feature-full-2col .f-hotel .descrip small, .feature-full-2col .f-hotel .descrip span {
+  display: block;
+}
+.feature-full-2col .f-hotel .descrip small {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.feature-full-2col .f-hotel .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .feature-full-2col .f-hotel .image {
+    position: relative;
+    height: 200px;
+  }
+}
+.feature-full-2col .f-hotel .image, .feature-full-2col .f-hotel .desc {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .feature-full-2col .f-hotel .image, .feature-full-2col .f-hotel .desc {
+    width: 100%;
+  }
+}
+.feature-full-2col .f-hotel .desc {
+  padding: 30px;
+  background: #fff;
+}
+.feature-full-2col .f-hotel:hover .image .descrip, .feature-full-2col .f-hotel:focus .image .descrip {
+  right: 0;
+}
+
+#featured-hotel,
+#hotel-facilities,
+#testimonial,
+#fh5co-blog-section,
+#fh5co-hotel-section,
+#fh5co-services-section,
+#fh5co-contact-section,
+#footer {
+  padding: 3em 0;
+}
+
+#hotel-facilities {
+  float: left;
+  width: 100%;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+
+#fh5co-hotel-section .hotel-content .hotel-grid {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#fh5co-hotel-section .hotel-content .hotel-grid .price small {
+  color: rgba(255, 255, 255, 0.5);
+}
+#fh5co-hotel-section .hotel-content .hotel-grid > div {
+  width: 110px;
+  position: absolute;
+  top: 0;
+  left: -110px;
+  padding: 10px;
+  background: #ff5722;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#fh5co-hotel-section .hotel-content .hotel-grid > div small {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#fh5co-hotel-section .hotel-content .hotel-grid > div span {
+  display: block;
+  font-size: 18px;
+}
+#fh5co-hotel-section .hotel-content .hotel-grid .book-now {
+  position: absolute;
+  bottom: -47px;
+  right: 0;
+  color: #F57A39;
+  font-size: 22px;
+  width: 150px;
+  padding: 7px 0;
+  background: #3c4146;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#fh5co-hotel-section .hotel-content .hotel-grid .book-now:hover, #fh5co-hotel-section .hotel-content .hotel-grid .book-now:focus {
+  color: #fff !important;
+  text-decoration: none;
+}
+#fh5co-hotel-section .hotel-content .desc {
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  padding: 20px;
+  margin-bottom: 40px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-hotel-section .hotel-content .desc {
+    margin-bottom: 40px;
+  }
+}
+#fh5co-hotel-section .hotel-content .desc h3 {
+  font-size: 30px;
+    margin: 0 0 20px 0;
+    color: #F57A39;
+}
+#fh5co-hotel-section .hotel-content .desc h3 a {
+  color: rgba(0, 0, 0, 0.7);
+}
+#fh5co-hotel-section .hotel-content:hover .hotel-grid > div, #fh5co-hotel-section .hotel-content:focus .hotel-grid > div {
+  left: 0;
+}
+#fh5co-hotel-section .hotel-content:hover .hotel-grid .book-now, #fh5co-hotel-section .hotel-content:focus .hotel-grid .book-now {
+  bottom: 0;
+}
+#fh5co-hotel-section .hotel-content:hover .desc, #fh5co-hotel-section .hotel-content:focus .desc {
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+  -ms-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+  -o-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+
+.fh5co-bg-color {
+  background: #e6e6e6;
+}
+
+.section-title {
+  margin-bottom: 5em;
+  float: left;
+  width: 100%;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    padding-top: 4em;
+  }
+}
+.section-title h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+.fh5co-table,
+.fh5co-table-cell,
+.fh5co-parallax {
+  height: 600px;
+}
+
+.fh5co-parallax {
+  background-color: #555;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.fh5co-parallax .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-parallax {
+    height: inherit;
+    padding: 4em 0;
+  }
+}
+.fh5co-parallax .fh5co-intro h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-parallax .fh5co-intro h1 {
+    font-size: 30px;
+  }
+}
+.fh5co-parallax .fh5co-intro p {
+  color: #fff;
+}
+.fh5co-parallax .fh5co-intro p a {
+  color: #FF5722;
+  border-bottom: 2px solid #F57A39;
+}
+.fh5co-parallax .fh5co-intro p a:hover {
+  color: #FF5722;
+}
+.fh5co-parallax .fh5co-intro.box-area {
+  padding: 40px;
+  background: #222831;
+}
+
+.fh5co-table {
+  display: table;
+}
+
+.fh5co-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+#fh5co-wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.fh5co-offcanvas {
+  overflow: hidden;
+}
+.fh5co-offcanvas #fh5co-wrapper {
+  overflow: hidden !important;
+}
+
+#fh5co-page {
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.fh5co-offcanvas #fh5co-page {
+  -moz-transform: translateX(-240px);
+  -webkit-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  -o-transform: translateX(-240px);
+  transform: translateX(-240px);
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-menu-wrap {
+    display: none;
+  }
+}
+
